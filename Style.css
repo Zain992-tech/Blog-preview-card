@@ -1,0 +1,104 @@
+@font-face {
+    font-family: Figtree-Medium;
+    src: url(Figtree-Medium.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(244, 208, 78);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Card container */
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 6px 6px 3px black;
+  overflow: hidden;
+  width: clamp(300px, 90vw, 380px);
+  display: flex;
+  flex-direction: column;
+  border: 1.5px solid black;
+}
+
+/* Image */
+.card img {
+  width: 90%;
+  display: block;
+  border-radius: 25px;
+  padding: 15px;
+  align-self: center;
+}
+
+/* Content */
+.card-content {
+  padding: 1.2rem;
+}
+
+.tag {
+  display: inline-block;
+  font-family: "Figtree-Medium";
+  background: rgb(244, 208, 78);
+  color: rgb(17, 17, 17);
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 0.6rem;
+}
+
+.date {
+  font-family: "Figtree-Medium";
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(107, 107, 107);
+  margin-bottom: 0.6rem;
+}
+
+.card h1 {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-family: "Figtree-Medium";
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(17, 17, 17);
+}
+
+.card p {
+  font-family: "Figtree-Medium";
+  font-size: 0.9rem;
+  text-align: justify;
+  color: rgb(107, 107, 107);
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+/* Author section */
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.author span {
+  font-family: "Figtree-Medium";
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+h1 a:hover,
+h1 a:focus{
+    color: rgb(244, 208, 78);
+}
